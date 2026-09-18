@@ -38,13 +38,13 @@ _September 20, 2026_<br>
 
 ### **_2. Don Norman Usability & Constraint Audit_**
 
-| Norman Principle           | UI Component / Feature Context         | Specific HTML Element or Attribute Used to Enforce Principle |
-| :------------------------- | :------------------------------------- | :----------------------------------------------------------- |
-| Signifier                  | Primary Action Button (Above the Fold) |                                                              |
-| Signifier                  | Recommended Tier Indicator             |                                                              |
-| Physical/System Constraint | Workload Estimator: Node Count         |                                                              |
-| Physical/System Constraint | Operator Contact Field                 |                                                              |
-| Feedback Loop              | Form Submission / Live Anchors         |                                                              |
+| Norman Principle           | UI Component / Feature Context         | Specific HTML Element or Attribute Used to Enforce Principle                                                  |
+| :------------------------- | :------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| Signifier                  | Primary Action Button (Above the Fold) | anchor tag: `<a></a>`                                                                                         |
+| Signifier                  | Recommended Tier Indicator             | `<div class="popular-tag"><strong>Most Popular</strong></div>`                                                |
+| Physical/System Constraint | Workload Estimator: Node Count         | `min`="1000" `max`="1000000"                                                                                  |
+| Physical/System Constraint | Operator Contact Field                 | `required`                                                                                                    |
+| Feedback Loop              | Form Submission / Live Anchors         | Once submit button is clicked, the page `refreshes`, updates URL to include `#`, and sends user to the `top`. |
 
 ---
 
