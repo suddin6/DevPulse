@@ -28,7 +28,7 @@ _September 20, 2026_<br>
 - **Action 2**:
   - User scrolls down or clicks on navigation link to reach the three hosting tiers.
 - **Action 3**:
-  - User inspects ther tiered cards where the "Pro Cluster" card is visually elevated (badge signifier).
+  - User inspects the tiered cards where the "Pro Cluster" card is visually elevated (badge signifier).
 - **Action 4**:
   - User submits log throughput and node count requirements into a number input field and clicks the primary registration CTA (Generate API Keys).
 - **Terminal State**:
@@ -51,21 +51,94 @@ _September 20, 2026_<br>
 ### **_3. Semantic Component & Working Tree_**
 
 ```
-index.html
-    <head>
-    <body>
-        <header>
-            <span>
-            <nav>
-            <a>
-        <main>
-            <div>
-                <h1>
-            <section>
-                <article>
-            <section>
-            <section>
-        <footer>
+body
+  header
+    div<logo>
+    nav
+      a<capabilities>
+      a<comparison>
+      a<registration>
+    CTA button <Deploy Free Cluster>
+  main
+    section<hero>
+      header
+          h1<title of page>
+          p<subtitle/short text> (Core Value Metrics)
+          img<>
+    section<capabilities>
+      header
+        h2<section-title>
+        p<section-subtitle>
+      div<features-grid>
+        article<feature-1>
+          h3<feature-name> (Latency Tracking)
+          p<describe feature>
+          img<>
+        article<feature-2>
+          h3<feature-name> (Log Aggregation)
+          p<describe feature>
+          img<>
+        article<feature-3>
+          h3<feature-name> (Auto-Remediation)
+          p<describe feature>
+          img<>
+    section<comparison>
+      header
+        h2<section-title>
+        p<section-subtitle>
+      div<tier-grid>
+        article<tier-1>
+          h3<tier-name> (Developer)
+          p<describe tier>
+          div<tier-price>
+            span<tier-values>
+          ul<tier-features>
+            li<features-list>
+          CTA Button <Deploy Developer>
+        article<tier-2>
+          div<popular-tag>
+          h3<feature-tier> (Pro Cluster)
+          p<describe tier>
+          div<tier-price>
+            span<tier-values>
+          ul<tier-features>
+            li<features-list>
+          CTA Button <Join Pro Cluster>
+        article<tier-3>
+          h3<feature-tier> (Enterprise Dedicated)
+          p<describe tier>
+          div<tier-price>
+            span<tier-values>
+          ul<tier-features>
+            li<features-list>
+          CTA Button <Become Dedicated Today>
+    section<registration>
+      div<form-wrapper>
+        header
+          h2<section-title>
+          p<section-subtitle>
+        form<registration-form>
+          div<form-group>
+            label<contact-email>
+            input<type="email" required>
+          div<form-group>
+            label<node-count>
+            input<type="number" min="" max="" step="1000" required>
+            span<constraints>
+          div<form-group>
+            label<log-throughput>
+            input<type="number" min="" max="" step="1000" required>
+            span<constraints>
+          button<Generate API Keys>
+  footer
+    div<footer-container>
+      div<logo>
+      div<links>
+        a<capabilities>
+        a<comparison>
+        a<registration>
+        a<scroll to top> (Hero Section)
+      CTA Button <Deploy Free Cluster>
 ```
 
 ---
