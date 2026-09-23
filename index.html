@@ -48,64 +48,130 @@
         </div>
       </section>
 
-      <section id="capabilities" class="section-container"></section>
-      <section id="comparison" class="section-container"></section>
+      <!-- Capabilities Section -->
+      <section id="capabilities" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Designed for Best Customer Experience</h2>
+          <p class="section-subtitle">
+            Everything needed to support customers and provide optimal
+            operational performance and unit economics.
+          </p>
+        </header>
+
+        <!-- Company Capabilities -->
+        <div class="features-grid">
+          <!-- Latency Tracking -->
+          <article class="feature-card">
+            <div class="feature-icon">&#128337;</div>
+            <h3 class="feature-title">Latency Tracking</h3>
+            <p class="feature-desc">
+              Boost performance by identifying bottlenecks, optimizing database
+              queries, and improving page response times.
+            </p>
+          </article>
+
+          <!-- Log Aggregation -->
+          <article class="feature-card">
+            <div class="feature-icon">&#128203;</div>
+            <h3 class="feature-title">Log Aggregation</h3>
+            <p class="feature-desc">
+              Organize your system with a unified dashboard filled with error
+              logs of site components. Quickly search and filter through issue
+              requests and instantly debug.
+            </p>
+          </article>
+
+          <!-- Auto-Remediation -->
+          <article class="feature-card">
+            <div class="feature-icon">&#128260;</div>
+            <h3 class="feature-title">Auto-Remediation</h3>
+            <p class="feature-desc">
+              Receive automatic solutions to system alerts or failures and
+              reroute traffic instantly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Tier Comparison Section -->
+      <section id="comparison" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title"></h2>
+          <p class="section-subtitle"></p>
+        </header>
+
+        <!-- Developer -->
+        <article class="tier-card">
+          <h3 class="tier-name">Developer</h3>
+          <p class="tier-desc">For individual developer startups</p>
+
+          <div class="tier-price">
+            <span class="price-val">$0</span>
+            <span class="price-occur">per month</span>
+          </div>
+
+          <ul class="tier-features">
+            <li>Basic Observability</li>
+            <li>Standard Latency Alerts</li>
+            <li>Community Support</li>
+          </ul>
+
+          <a href="#registration" class="btn btn-outline btn-block">
+            Deploy Developer
+          </a>
+        </article>
+
+        <!-- Pro Cluster -->
+        <article class="tier-card featured">
+          <div class="popular-tag">Most Popular</div>
+
+          <h3 class="tier-name">Pro Cluster</h3>
+          <p class="tier-desc">For growing applications</p>
+
+          <div class="tier-price">
+            <span class="price-val">$20</span>
+            <span class="price-occur">per month</span>
+          </div>
+
+          <ul class="tier-features">
+            <li>Advanced Log Aggregation</li>
+            <li>Automated Incident Recovery</li>
+            <li>Real-time Performance Metrics</li>
+            <li>Custom Alerting Thresholds</li>
+          </ul>
+
+          <a href="#registration" class="btn btn-outline btn-block">
+            Join Pro Cluster
+          </a>
+        </article>
+
+        <!-- Enterprise Dedicated -->
+        <article class="tier-card">
+          <h3 class="tier-name">Enterprise Dedicated</h3>
+          <p class="tier-desc">For established businesses</p>
+
+          <div class="tier-price">
+            <span class="price-val">$100</span>
+            <span class="price-occur">per month</span>
+          </div>
+
+          <ul class="tier-features">
+            <li>Full-Stack Auto-Remediation</li>
+            <li>Unlimited Logs & Extended Retention</li>
+            <li>Dedicated Infrastructure & SLAs</li>
+          </ul>
+
+          <a href="#registration" class="btn btn-outline btn-block">
+            Become Dedicated Today
+          </a>
+        </article>
+      </section>
+
+      <!-- Workload Compatibility Section -->
       <section id="compatibility" class="section-container"></section>
     </main>
+
     <!-- 
-  main
-    section<hero>
-      header
-          h1<title of page>
-          p<subtitle/short text> (Core Value Metrics)
-          img<>
-    section<capabilities>
-      header
-        h2<section-title>
-        p<section-subtitle>
-      div<features-grid>
-        article<feature-1>
-          h3<feature-name> (Latency Tracking)
-          p<describe feature>
-          img<>
-        article<feature-2>
-          h3<feature-name> (Log Aggregation)
-          p<describe feature>
-          img<>
-        article<feature-3>
-          h3<feature-name> (Auto-Remediation)
-          p<describe feature>
-          img<>
-    section<comparison>
-      header
-        h2<section-title>
-        p<section-subtitle>
-      div<tier-grid>
-        article<tier-1>
-          h3<tier-name> (Developer)
-          p<describe tier>
-          div<tier-price>
-            span<tier-values>
-          ul<tier-features>
-            li<features-list>
-          CTA Button <Deploy Developer>
-        article<tier-2>
-          div<popular-tag>
-          h3<feature-tier> (Pro Cluster)
-          p<describe tier>
-          div<tier-price>
-            span<tier-values>
-          ul<tier-features>
-            li<features-list>
-          CTA Button <Join Pro Cluster>
-        article<tier-3>
-          h3<feature-tier> (Enterprise Dedicated)
-          p<describe tier>
-          div<tier-price>
-            span<tier-values>
-          ul<tier-features>
-            li<features-list>
-          CTA Button <Become Dedicated Today>
     section<registration>
       div<form-wrapper>
         header
