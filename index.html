@@ -42,7 +42,7 @@
           <a href="#registration" class="btn btn-primary">
             Begin Trial Today
           </a>
-          <a href="comparison" class="btn btn-secondary">
+          <a href="#comparison" class="btn btn-secondary">
             View Service Plans
           </a>
         </div>
@@ -96,8 +96,10 @@
       <!-- Tier Comparison Section -->
       <section id="comparison" class="section-container">
         <header class="section-header">
-          <h2 class="section-title"></h2>
-          <p class="section-subtitle"></p>
+          <h2 class="section-title">Transparent, Friendly Pricing</h2>
+          <p class="section-subtitle">
+            Unlock immediate perks upon first transaction.
+          </p>
         </header>
 
         <!-- Developer -->
@@ -168,36 +170,131 @@
       </section>
 
       <!-- Workload Compatibility Section -->
-      <section id="compatibility" class="section-container"></section>
+      <section id="compatibility" class="section-container">
+        <div class="form-wrapper">
+          <header class="section-header">
+            <h2 class="section-title">Claim API Sandbox Keys</h2>
+            <p class="section-subtitle">
+              Instant benefits. No additional fees.
+            </p>
+          </header>
+
+          <!-- Registration Form -->
+          <form action="" method="post" class="reg-form">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="full-name">
+                Full Name<span class="required-mark">*</span>:
+              </label>
+
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                class="form-controls"
+                placeholder="Sumaya Uddin"
+                required
+              />
+            </div>
+
+            <!-- Contact Email -->
+            <div class="form-group">
+              <label for="contact-email" class="form-label">
+                Email<span class="required-mark">*</span>:
+              </label>
+
+              <input
+                type="email"
+                name="contact-email"
+                id="contact-email"
+                class="form-controls"
+                placeholder="xyz@gmail.com"
+                required
+              />
+            </div>
+
+            <!-- Node Count -->
+            <div class="form-group">
+              <label for="node-count" class="form-label">
+                Node Count<span class="required-mark">*</span>:
+              </label>
+
+              <input
+                type="number"
+                name="node-count"
+                id="node-count"
+                class="form-controls"
+                placeholder="10"
+                min="0"
+                max="10000"
+                step="10"
+                required
+              />
+
+              <span class="input-hint">Min: 0 nodes - Max: 10000 nodes</span>
+            </div>
+
+            <!-- Log Throughput -->
+            <div class="form-group">
+              <label for="log-thru" class="form-label">
+                Log Throughput<span class="required-mark">*</span>:
+              </label>
+
+              <input
+                type="number"
+                name="log-thru"
+                id="log-thru"
+                class="form-controls"
+                placeholder="5"
+                min="0"
+                max="500000"
+                step="100"
+                required
+              />
+
+              <span class="input-hint">Min: 0GB - Max: 500000GB</span>
+            </div>
+
+            <!-- Tier Selection -->
+            <div class="form-group">
+              <label for="business-tier" class="form-label">
+                Tier Selection<span class="required-mark">*</span>:
+              </label>
+
+              <select
+                name="business-tier"
+                id="business-tier"
+                class="form-controls"
+                required
+              >
+                <option value="dev">Developer</option>
+                <option value="pro">Pro Cluster</option>
+                <option value="ent">Enterprise Dedicated</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              Generate API Keys
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <!-- 
-    section<registration>
-      div<form-wrapper>
-        header
-          h2<section-title>
-          p<section-subtitle>
-        form<registration-form>
-          div<form-group>
-            label<contact-email>
-            input<type="email" required>
-          div<form-group>
-            label<node-count>
-            input<type="number" min="" max="" step="1000" required>
-            span<constraints>
-          div<form-group>
-            label<log-throughput>
-            input<type="number" min="" max="" step="1000" required>
-            span<constraints>
-          button<Generate API Keys>
-  footer
-    div<footer-container>
-      div<logo>
-      div<links>
-        a<capabilities>
-        a<comparison>
-        a<registration>
-        a<scroll to top> (Hero Section)
-      CTA Button <Deploy Free Cluster> -->
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-copy">
+          &copy; DevPulse Tech Inc. CSI 3150 - Sumaya Uddin
+        </p>
+        <nav class="footer-links" aria-label="Footer Navigation Links">
+          <a href="#capabilities">Features</a>
+          <a href="#comparison">Tiers</a>
+          <a href="#compatibility">Register</a>
+          <a href="#hero">↑ Back to Top</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

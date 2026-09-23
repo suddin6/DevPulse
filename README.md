@@ -128,6 +128,12 @@ body
             label<log-throughput>
             input<type="number" min="" max="" step="1000" required>
             span<constraints>
+          div<form-group>
+            label<business-tier>
+            select
+              option<Developer>
+              option<Pro Cluster>
+              option<Enterprise Dedicated>
           button<Generate API Keys>
   footer
     div<footer-container>
@@ -137,7 +143,6 @@ body
         a<comparison>
         a<compatibility>
         a<scroll to top> (Hero Section)
-      CTA Button <Deploy Free Cluster>
 ```
 
 ---
