@@ -57,14 +57,13 @@ body
     nav
       a<capabilities>
       a<comparison>
-      a<registration>
+      a<compatibility>
     CTA button <Deploy Free Cluster>
   main
     section<hero>
-      header
-          h1<title of page>
-          p<subtitle/short text> (Core Value Metrics)
-          img<>
+        h1<title of page>
+        p<subtitle/short text> (Core Value Metrics)
+        img<>
     section<capabilities>
       header
         h2<section-title>
@@ -136,7 +135,7 @@ body
       div<links>
         a<capabilities>
         a<comparison>
-        a<registration>
+        a<compatibility>
         a<scroll to top> (Hero Section)
       CTA Button <Deploy Free Cluster>
 ```
