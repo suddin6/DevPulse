@@ -142,8 +142,12 @@ html {
   gap: 0.5rem;
 }
 
-.logo-icon {
-  color: var(--primary);
+.logo-img {
+  width: auto;
+  height: 1.5rem;
+  max-width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .nav-bar {
