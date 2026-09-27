@@ -72,15 +72,12 @@ body
         article<feature-1>
           h3<feature-name> (Latency Tracking)
           p<describe feature>
-          img<>
         article<feature-2>
           h3<feature-name> (Log Aggregation)
           p<describe feature>
-          img<>
         article<feature-3>
           h3<feature-name> (Auto-Remediation)
           p<describe feature>
-          img<>
     section<comparison>
       header
         h2<section-title>
@@ -143,6 +140,7 @@ body
         a<comparison>
         a<compatibility>
         a<scroll to top> (Hero Section)
+      a<attribution>
 ```
 
 ---
