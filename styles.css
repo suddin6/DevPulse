@@ -425,5 +425,133 @@ html {
 }
 
 /* Compatibilities Section */
+.form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: 8px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-label {
+  font-family: var(--subtitle);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.required-mark {
+  color: #dc3545;
+}
+
+.form-controls {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-family: var(--para);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  transition: border-color var(--transition-speed);
+}
+
+.form-controls:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.input-hint {
+  font-family: var(--para);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
 
 /* Footer Section */
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 1.5rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  font-family: var(--subtitle);
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--text-main);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .cta-action-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .feature-card,
+  .tier-card {
+    flex-direction: column;
+  }
+
+  .tier-card.featured {
+    transform: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 412px) {
+  .btn-sm {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
